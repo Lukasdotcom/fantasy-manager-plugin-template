@@ -1,0 +1,14 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["unused-imports", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "root": true,
+  "rules": {
+    "no-var": "error",
+    "no-implied-eval": "error",
+    "no-eval": "error",
+    "no-const-assign": "error",
+    "unused-imports/no-unused-imports": "error",
+    "no-restricted-imports": ["error"]
+  }
+}
