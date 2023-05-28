@@ -24,9 +24,9 @@
 3. Now run `npm test` to fix anything new and then you can update the plugin.
 4. Update the version number in the Sample.json file.
 
-# Best Practices
+# Examples
 
-Create a release everytime you update the plugin and make sure the links in the Sample.json file point to the release version.
+For some examples you can look at the official plugins at [the official repository](https://github.com/Lukasdotcom/fantasy-manager/tree/main/store). This will have all the plugins that are automatically enabled.
 
 # Minimum Version
 
