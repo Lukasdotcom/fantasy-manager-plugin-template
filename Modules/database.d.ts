@@ -19,8 +19,9 @@ export interface players {
   name: string;
   nameAscii: string;
   club: string;
-  pictureUrl: string;
+  pictureID: number;
   value: number;
+  sale_price: number;
   position: position;
   forecast: forecast;
   total_points: number;
@@ -92,8 +93,9 @@ export interface historicalPlayers {
   name: string;
   nameAscii: string;
   club: string;
-  pictureUrl: string;
+  pictureID: number;
   value: number;
+  sale_price: number;
   position: position;
   forecast: forecast;
   total_points: number;
@@ -113,6 +115,7 @@ export interface historicalTransfers {
 export interface clubs {
   club: string;
   gameStart: number;
+  gameEnd: number;
   opponent: string;
   league: string;
 }
@@ -142,12 +145,20 @@ export interface analytics {
   localeActive: string;
   localeTotal: string;
 }
+// Stores all the plugin settings
 export interface plugins {
   name: string;
   settings: string; // JSON of all the settings
   enabled: boolean;
   url: string;
   version: string;
+}
+export interface pictures {
+  id: number;
+  url: string;
+  downloaded: boolean;
+  width: number;
+  height: number;
 }
 export type anouncementColor = "error" | "info" | "success" | "warning";
 export interface announcements {

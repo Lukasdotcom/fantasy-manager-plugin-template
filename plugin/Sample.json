@@ -1,6 +1,6 @@
 {
   "id": "This is were the name of the plugin is, note that a server can only have one plugin with the same name enabled at a time.",
-  "version": "1.0.0 Increase the 1.0.0 every time you make a change",
+  "version": "1.0.0 Change the version every time you make a change",
   "description": "A description for the user to use.",
   "files": [
     "All the files in this list will be downloaded to the server when the plugin is installed.",
