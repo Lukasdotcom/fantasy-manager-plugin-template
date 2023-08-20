@@ -31,3 +31,16 @@ For some examples you can look at the official plugins at [the official reposito
 # Minimum Version
 
 Currently there is only one version that exists which is 1.12.0.
+
+# Note about total, average, and last_match points
+
+Some of this can not be passed and will be calculated automatically.
+
+1. You can pass all of them and they will all be used
+2. You can only pass the last_match and the rest will be automatically calculated
+3. You can only pass the total and the rest will be automatically calculated
+4. You can pass the average and it will be used instead of being calculated
+
+# Notes about what data is used
+
+While the transfermarket is open all the data is updated except for last_match. Then once the transfermarket closes the club, picture, value, sale price, and position will not be updated anymore during the matchday. Then once the game starts last_match will be updated again, and forecast will stop updating. Then once the game ends all the points will stop updating again.
