@@ -4,6 +4,7 @@
   "parser": "@typescript-eslint/parser",
   "root": true,
   "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
     "no-var": "error",
     "no-implied-eval": "error",
     "no-eval": "error",

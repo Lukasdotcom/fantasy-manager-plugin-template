@@ -28,11 +28,11 @@
 
 # Examples
 
-For some examples you can look at the official plugins at [the official repository](https://github.com/Lukasdotcom/fantasy-manager/tree/main/store). This will have all the plugins that are automatically enabled.
+For some examples you can look at the official plugins at [the official repository](https://github.com/Lukasdotcom/fantasy-manager/tree/main/store). This will have all the plugins that are automatically installed.
 
 # Minimum Version
 
-Currently there is only one version that exists which is 1.12.0.
+Currently there is only one version that matters which is 1.12.0. The plugin system has not changed since that version.
 
 # Note about total, average, and last_match points
 
