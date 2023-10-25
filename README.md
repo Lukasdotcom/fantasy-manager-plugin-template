@@ -7,11 +7,13 @@
    - Set the version to 1.0.0
    - Change the description to your liking (optional you can remove the entry if you do not want a description).
    - If your plugin needs settings you can put them into input like this:
-     - "settings": {
+     - "input": [
+       {
        "variant": "string",
-       "name": "example",
-       "description": "This is a description of what this input does"
+       "name": "sample",
+       "description": "The input for this will be passed into your function under the settings dictionary with the key 'sample'"
        }
+       ]
    - You can then add a min_version key if you require features only available in a certain server version. For the values you can choose go to [Version Changes](#Minimum-Version)
 4. Now you can start programming your plugin. Go into the index.ts file and change it so it returns the correct values for your league.
 5. When you are done with that run `npm test` and fix all the errors. This will make sure that your code is well written and formatted.
