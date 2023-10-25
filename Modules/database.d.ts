@@ -7,6 +7,7 @@ export interface users {
   password: string;
   throttle: number;
   active: boolean;
+  inActiveDays: number;
   google: string;
   github: string;
   admin: boolean;
@@ -45,6 +46,9 @@ export interface leagueSettings {
   league: string;
   archived: number;
   matchdayTransfers: boolean;
+  top11: boolean;
+  active: boolean;
+  inActiveDays: number;
 }
 export interface leagueUsers {
   leagueID: number;
@@ -156,7 +160,8 @@ export interface plugins {
 export interface pictures {
   id: number;
   url: string;
-  downloaded: boolean;
+  downloading: boolean; // If the picture has started downloading
+  downloaded: boolean; // If the picture exists as a valid file
   width: number;
   height: number;
 }
