@@ -1,5 +1,4 @@
-import { clubs } from "#Modules/database";
-import dataGetter, { players } from "#type/data";
+import dataGetter, { players, clubs } from "#type/data";
 import { API_RESULT } from "./types";
 const Main: dataGetter = async (settings, past_data) => {
   console.log(past_data);

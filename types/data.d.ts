@@ -1,4 +1,9 @@
-import { forecast, position, clubs } from "#Modules/database";
+import {
+  forecast,
+  position,
+  players as dbplayers,
+  clubs as dbclubs,
+} from "#Modules/database";
 
 export interface players {
   uid: string; // This is the unique id of the player
@@ -18,13 +23,24 @@ export interface players {
   [key: string]: unknown; // This is so the type definition will work for new versions
 }
 
+export interface clubs {
+  club: string; // This is the name of the club
+  gameStart: number; // This is the start time of the game
+  gameEnd: number; // This is the end time of the game
+  opponent: string; // This is the name of the opponent
+  teamScore?: number; // This is the score of the team
+  opponentScore?: number; // This is the score of the opponent
+  league: string; // This is the name of the league
+  home?: boolean; // This is if it is home or away, If not set it is chosen at random so that there is only one home team in a game
+}
+
 // These are the types for the data getter functions
 export type result = [boolean, number, players[], clubs[]];
 type dataGetter = (
   settings: { [key: string]: string },
   past_data: {
-    players: players[];
-    clubs: clubs[];
+    players: dbplayers[];
+    clubs: dbclubs[];
     timestamp: number;
     [key: string]: unknown;
   },

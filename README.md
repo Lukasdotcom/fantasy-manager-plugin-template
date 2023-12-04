@@ -32,7 +32,13 @@ For some examples you can look at the official plugins at [the official reposito
 
 # Minimum Version
 
-Currently there is only one version that matters which is 1.12.0. The plugin system has not changed since that version.
+All plugins should work with all versions so you can keep the minimum version to 1.12.0. Note that the past_data parameter passes data directly from the db, and newer versions of the server might pass more data, for more details look at the database.d.ts file.
+
+## Features
+
+Some features will only do something on certain versions of the server.
+
+1. The home feature will only work on servers running 1.16.0 or later
 
 # Note about total, average, and last_match points
 
