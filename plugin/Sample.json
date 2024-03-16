@@ -3,7 +3,7 @@
   "version": "1.0.0 Change the version every time you make a change",
   "description": "A description for the user to use.",
   "files": [
-    "All the files in this list will be downloaded to the server when the plugin is installed.",
+    "All the files in this list will be downloaded to the server when the plugin is installed. They will all be in the same folder.",
     "https://raw.githubusercontent.com/Lukasdotcom/fantasy-manager-plugin-template/main/plugin/Bundesliga/index.ts",
     "https://raw.githubusercontent.com/Lukasdotcom/fantasy-manager-plugin-template/main/plugin/Bundesliga/types.d.ts"
   ],

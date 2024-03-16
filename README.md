@@ -17,7 +17,8 @@
    - You can then add a min_version key if you require features only available in a certain server version. For the values you can choose go to [Version Changes](#Minimum-Version)
 4. Now you can start programming your plugin. Go into the index.ts file and change it so it returns the correct values for your league.
 5. When you are done with that run `npm test` and fix all the errors. This will make sure that your code is well written and formatted.
-6. Now you just publish your github repository and then go to the Sample.json file and copy the link to the raw code. This link should be importable as a plugin.
+6. You can also test running the plugin with the command `npm start`. This will run the code in main.ts.
+7. Now you just publish your github repository and then go to the Sample.json file and copy the link to the raw code. This link should be importable as a plugin.
 
 # How to update Plugin
 
