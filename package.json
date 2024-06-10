@@ -10,11 +10,11 @@
     "start": "ts-node --project=tsconfig.json ./main.ts"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "7.10.0",
-    "@typescript-eslint/parser": "7.10.0",
+    "@typescript-eslint/eslint-plugin": "7.13.0",
+    "@typescript-eslint/parser": "7.13.0",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.3",
-    "prettier": "3.2.5",
+    "prettier": "3.3.1",
     "ts-node": "10.9.2",
     "typescript": "5.4.5"
   },
