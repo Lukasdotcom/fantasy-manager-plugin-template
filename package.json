@@ -19,8 +19,7 @@
     "typescript": "5.4.5"
   },
   "imports": {
-    "#/*": "./*.js",
-    "#type/*": "./types/*.js",
-    "#Modules/*": "./Modules/*.js"
+    "#/*": "./*.ts",
+    "#types/*": "./types/*.ts"
   }
 }

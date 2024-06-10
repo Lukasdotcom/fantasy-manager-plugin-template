@@ -3,7 +3,7 @@ import {
   position,
   players as dbplayers,
   clubs as dbclubs,
-} from "#Modules/database";
+} from "#types/database";
 
 export interface players {
   uid: string; // This is the unique id of the player

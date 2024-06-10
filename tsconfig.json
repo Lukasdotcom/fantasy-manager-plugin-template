@@ -2,7 +2,7 @@
   "compilerOptions": {
     "paths": {
       "#/*": ["./*"],
-      "#type/*": ["./types/*"],
+      "#types/*": ["./types/*"],
       "#Modules/*": ["./Modules/*"]
     },
     "noImplicitAny": true,
