@@ -4,6 +4,7 @@ export type position = "bench" | "gk" | "def" | "mid" | "att";
 export type forecast = "a" | "u" | "m";
 export interface clubs {
   club: string;
+  fullName?: string; // This was added in 1.19.0
   gameStart: number;
   gameEnd: number;
   opponent: string;

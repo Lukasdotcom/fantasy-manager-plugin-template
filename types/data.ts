@@ -25,6 +25,7 @@ export interface players {
 
 export interface clubs {
   club: string; // This is the name of the club
+  fullName?: string; // This is the full name of the club
   gameStart: number; // This is the start time of the game
   gameEnd: number; // This is the end time of the game
   opponent: string; // This is the name of the opponent
@@ -35,13 +36,23 @@ export interface clubs {
 }
 
 // These are the types for the data getter functions
-export type result = [boolean, number, players[], clubs[]];
+export type result = [
+  boolean,
+  number,
+  players[],
+  clubs[],
+  {
+    update_points_after_game_end?: boolean; // Set this to true if you want the plugin to be able to change points even after the game has ended
+    [key: string]: unknown;
+  }?, // This is an optional paramater added in 1.20.0 for settings
+];
 type dataGetter = (
   settings: { [key: string]: string },
   past_data: {
     players: dbplayers[];
     clubs: dbclubs[];
     timestamp: number;
+    transferOpen: boolean; // This was added in version 1.20.0. If this is required you must set 1.20.0 as the min version.
     [key: string]: unknown;
   },
 ) => Promise<result>;
